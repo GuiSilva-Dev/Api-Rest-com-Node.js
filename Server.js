@@ -22,7 +22,7 @@ app.use(express.json()); // ESSENCIAL: Faz o Express entender JSON
 /**
  * ROTA PRINCIPAL DA API
  * Esta é a "ponte" que o front-end vai chamar.
- * Usamos app.post() pois o front-end vai ENVIAR (POSTAR) dados.
+ *  app.post() pois o front-end vai ENVIAR (POSTAR) dados.
  */
 app.post('/criar-usuario', async (req, res) => {
   // 1. Pega os dados que o front-end enviou no "corpo" (body) da requisição
@@ -63,7 +63,7 @@ app.post('/criar-usuario', async (req, res) => {
 
 /**
  * ROTA PARA APAGAR A TABELA DE USUÁRIOS
- * Usamos app.delete() pois é uma operação de exclusão.
+ * app.delete() pois é uma operação de exclusão.
  */
 app.delete('/apagar-tabela-usuarios', async (req, res) => {
   let db;
